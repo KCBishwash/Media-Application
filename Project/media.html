@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to Experience Nepal</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <style type="text/css">
+    body{background:url(images/wrapper-bg.png);}
+    .video_player_box{width:750px; background:#000; margin:0px auto;}
+    #video_control{background:#333; padding:5px;}
+    h1{ text-align: center;}
+    #footer { text-align: center; font-style:italic; color:#fff;}
+    </style>
+    <script>
+        function playPause(btn,vid){
+            var vid = document.getElementById(vid);
+            if(vid.paused){
+                vid.play();
+                btn.innerHTML = "Pause";
+            } else {
+                vid.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+    
+        <header>
+		    <img id="logo" src="images/logo.png" width="200"height="120">
+            <h1 id="title">Experience Nepal</h1>
+        </header>
+    
+        <main>
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home page</a></li>
+                        <li><a href="Aboutus.html">About us</a></li> 
+                        <li><a href="Nepaloverview.html">Nepal Overview</a></li>
+                        <li><a href="destination.html">Destination</a></li>
+                        <li><a href="thingstodo.html">Things to do</a></li>        
+                        <li><a href="accomodation.html">Accomodation</a></li>
+                        <li><a href="transport.html">Transport</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </nav>
+                <img src="images/title3.gif" id="list"alt="hot deals">
+				<div id="items">
+                    <div class="item">
+                        <a href="#"><img src="images/pic1.jpg" alt="" /></a>
+                        <span><a href="#">Everest Base Camp</a></span>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/pic2.jpg" alt="" /></a>
+                        <span><a href="#">Pokhara</a></span>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/picc2.jpg" alt="" /></a>
+                        <span><a href="#">Colours of Nepal</a></span>
+                    </div>
+                </div>
+            </aside>
+			
+            <div id="content">                     	  
+                <h1>Welcome to Our Media Page</h1>
+                <div class="video-container">
+                    <video id="my_video" controls="controls" width= "720" height= "450" alt="Nepal Tourism Video" >
+                        <source src="media/video.mp4" type="video/mp4" />
+                    </video>
+                    <div id="video_control" >
+                        <button id="playpausebtn"onclick="playPause(this,'my_video')">Play</button>
+                    </div>
+                </div>
+                <h2>National Anthem Song</h2>
+                <audio controls>
+                <source src="media/national.ogg" type="audio/ogg">
+                <source src="media/national.mp3" type="audio/mpeg">
+                </audio> 
+            </div>           
+        </main>
+
+        <footer>
+            <ul>
+				<li><a href="Aboutus.html">About us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="slider.html">Desktop site</a></li>
+				<li><a href="index2.html">Terms &amp; Conditions</a></li>
+				<li>&copy; KC, 2019</li>
+            </ul>
+        </footer>
+		
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/image_slide.js"></script>
+</body>
+</html>

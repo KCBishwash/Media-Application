@@ -1,0 +1,273 @@
+.wrapper {
+  max-width: 65em;
+  margin: 0 auto;
+}
+header {
+  overflow: hidden;
+  border-bottom-style: outset;
+  border-bottom-color: coral;
+  border-bottom-width: 7px;
+}
+main {
+  clear: both;
+}
+#content {
+  float: right;
+  max-width: 70%;
+  padding: 1.5em 0 3em 0;
+}
+#content1 {
+  float: left;
+  max-width: 70%;
+  padding: 1em 2em 1.5em 0;
+}
+.column3 {
+  max-width: 100%;
+  padding: 5.5em 0 3em 5em;
+}
+aside {
+  float: left;
+  max-width: 25%;
+  padding-top: 1.5em;
+}
+footer {
+  clear: both;
+  padding: 1.5em 0;
+}
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: #444;
+  line-height: 1.5;
+}
+p {
+  margin-bottom: 1em;
+}
+h1, h2,h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+header h1 {
+  font-size: 3em;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+header, footer {
+  text-align: center;
+}
+nav {
+  text-transform: uppercase;
+}
+body {
+    font-size:100%;
+}
+body {
+    color: #444;
+}
+h1#title{
+    color:#008000;
+}
+h1,nav a,{
+    color: #00FFFF;
+}
+footer a, footer {
+    color: #008000;
+}
+.selected {
+  color: #222;
+}
+footer {
+  background-color: #000000;
+  clear: both;
+  position: relative;
+  height: 40px;
+}
+nav ul, footer ul {
+  list-style-type: none;
+}
+nav li {
+  padding: 0.5em 0 0.5em 0;
+}
+nav li.current a, nav li:hover a{ 
+	color: #f00;
+	background: #CCC;
+	text-shadow: none;
+}
+footer li.current a, footer li:hover a{
+	color: #f00;
+	text-shadow: none;
+}
+footer li {
+  display: inline;
+  padding: 0 1.5em;
+}
+nav a, footer a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+img#logo {
+  float: left;
+}
+#items{
+  padding:17px 0 0 5px;
+  min-width:65%;
+  float:left;
+  overflow:hidden;
+}
+.item{
+  float:left;
+  margin:0 15px 13px 0;
+  float:left;
+}
+.item img{float:left}
+.item span{
+  background-image:url(images/span_bg.gif);
+  background-position:top left;
+  background-repeat:no-repeat;
+  display:block;
+  float:left;
+  min-height:18px;
+  line-height:18px;
+  min-width:202px;
+  padding:0 0 0 9px;
+}
+.item a{
+  color:#FFFFFF;
+  text-decoration:none;
+}
+#destination{
+padding:17px 0 20px 5px;
+max-width:450px;
+float:left;
+overflow:hidden;
+}
+.destiny{
+max-width:201px;
+float:left;
+margin:0 15px 13px 0;
+float:left;
+}
+
+.destiny span{
+background-image:url(images/span_bg.gif);
+background-position:top left;
+background-repeat:no-repeat;
+display:block;
+min-height:18px;
+line-height:18px;
+min-width:202px;
+padding:0 0 0 9px;
+}
+.destiny a{
+color:#FFFFFF;
+text-decoration:none
+}
+#navigat{
+padding:17px 0 25px 5px;
+max-width:200px;
+max-height:10px
+float:left;
+overflow:hidden;
+}
+#nav li{
+max-width:201px;
+float:left;
+margin:0 5px 5px 0;
+float:left;
+list-style-type: none;
+}
+#nav a{
+  color:#FFFFFF;
+  text-decoration: none;
+}
+#nav span{
+background-image:url(images/span_bg.gif);
+background-position:top left;
+background-repeat:no-repeat;
+display:block;
+min-height:18px;
+line-height:12px;
+min-width:202px;
+padding:0 0 0 9px;
+}
+.slideshow{  
+	margin-left: 1em;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}  
+ul.slideshow {
+	list-style: none;
+	width:672px;
+	height:280px;
+	overflow: hidden;
+	position: relative;
+	margin: 20px 0 0 0;
+}  
+ul.slideshow li {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+}
+ul.slideshow li.show {
+	z-index: 500;
+}
+ul img {
+	border: none;
+} 
+#slideshow-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+	z-index: 500;
+} 
+#slideshow-caption .slideshow-caption-container {
+	padding: 0 0 0 10px; 
+	background: transparent url(images/transparent.png) repeat;  
+	z-index: 1000;
+} 
+#slideshow-caption p {
+	padding: 0;
+	font: normal 130% arial, sans-serif;
+	color: #FFF;
+	text-shadow: 1px 1px #000;
+}
+img#list{
+  padding-top:20px;
+}
+
+@media(max-width:500px){
+    #content{
+       float: none;
+	   position: relative;
+    }
+	.column3{
+		float:none;
+		padding:0 0 0 0;
+	}
+    #menu-wrappe > li{
+        display: block;
+    }
+    .slideshow{
+	display: none;
+	}	
+	body {
+	font-size:1rem;} 
+
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.item:hover img {
+    position:center;
+    width:500px;
+    height:100px;
+    display:block;
+    z-index:999;
+}
+
+
+
